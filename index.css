@@ -139,7 +139,7 @@ h2{
     margin-top: -794.6px;
     border: none;
     background: #d4af37;
-    
+    margin-left: -6px;
     background-size: cover;
     height: 400px;
 }
@@ -313,7 +313,9 @@ h2{
     
     .welcome{
      min-height:700px;
-     min-width: 40px;
+     min-width: 60px;
+     background-image: url("image/back2.jpg");
+     
      
      
     }

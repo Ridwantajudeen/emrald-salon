@@ -16,6 +16,7 @@ body{
     background-color:#FAF8F0;
     background: linear-gradient(45deg,#000000, #281c02 );
     position: fixed;
+    display: flex;
     top: 0;
     left:0;
     height: 30px;
@@ -23,9 +24,10 @@ body{
     float: left;
     display: flex;
     color: #d4af37 ;
-   
+   justify-content: space-between;
     text-decoration: none;
     font-size: 17px;
+
     
 
 }
@@ -33,13 +35,16 @@ body{
    color: #d4af37;
     background: linear-gradient(45deg,#000000, #281c02 );
 }
+
 .brand, .he{
 margin-top: 0px;
 }
 
 .he{
-    margin-left: 55%; 
+    display: flex;
     margin-top: 3px;
+    margin-right: 10px;
+
 
 }
 .firstInput{
@@ -54,6 +59,7 @@ margin-top: 0px;
     border-radius: 20px;
     border: #000000 ;
     text-align: center;
+    overflow-y: hidden;
     
     
 }
@@ -80,15 +86,18 @@ h2{
 }
 #headlink:hover{
     color: #FAF8F0;
-    width: 70px;
+    width: 65px;
     background-color: #d4af37;
     border-radius: 7px;
+    height: 20px;
+    text-align:center;
 }
 #time:hover{
     background-color: #d4af37;
     border-radius: 7px;
     font-size: 22px;
     color: #FAF8F0;
+    
     
 } 
 #location{
@@ -102,7 +111,7 @@ h2{
     
 } 
 #book{
-    margin-top: 87px;
+    margin-top: 80px;
 }
 #book:hover{
     background-color: #d4af37;
@@ -134,9 +143,10 @@ h2{
 }
 #rounds{
     display: flex;
-    text-align: center;
-    margin-left: 25%;
+    
+    
     margin-top: 800px;
+    justify-content: space-around;
   
    
     
@@ -167,8 +177,8 @@ h2{
     opacity: 0.8;
     border-radius: 150px;
     
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 }
 .ball3{
     position: relative;
@@ -196,26 +206,30 @@ h2{
 #third{
     background:#FAF8F0;
     border: #d4af37 solid;
-    height: 400px;
+    height: 550px;
     border-radius:10%  ;
     margin-top: 20px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
     padding-top: 45px;
     opacity: 0.9;
 
 }
+
 .slideTexts{
-   height: 350px;
-   width: 325px;
+   height: 500px;
+   width: 550px;
    background-color: #d4af37;
-   position: absolute;
-   margin-left: 50px;
+   
+   
    border: none;
    border-radius:10%  ;
    
 }
 .mySlides{
-    height: 300px;
+    height: 450px;
     margin-top: 25px;
     margin-left: 12px;
     border: none;
@@ -224,23 +238,23 @@ h2{
     border-radius:10%  ;
 }
 .mySlides:hover{
-    height:370px ;
+    height:500px ;
     margin-top: 0;
     margin-left: 0;
 }
 
 .slideTexts2{
-    height: 350px;
-    width: 325px;
+    height: 500px;
+    width: 500px;
     background-color: #d4af37;
-    position: absolute;
-    margin-left: 500px;
+   
+    
     border: none;
     border-radius:10%  ;
  }
 
  .mySlides1{
-    height: 300px;
+    height: 450px;
     margin-top: 25px;
     margin-left: 12px;
     border: none;
@@ -249,48 +263,27 @@ h2{
     border-radius:10%  ;
 }
 .mySlides1:hover{
-    height:370px ;
-    margin-top: 0;
-    margin-left: 0;
-}
-.slideTexts3{
-    height: 350px;
-    width: 325px;
-    background-color: #d4af37;
-    position: absolute;
-    margin-left: 950px;
-    border: none;
-    border-radius:10%  ;
- }
-
- .mySlides2{
-    height: 300px;
-    margin-top: 25px;
-    margin-left: 12px;
-    border: none;
-    border-radius: 7px;
-    border: none;
-    border-radius:10%  ;
-}
-
-.mySlides2:hover{
-    height:370px ;
+    height:500px ;
     margin-top: 0;
     margin-left: 0;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .brand{
      height: 2px;
      
     }
     .he{
-    margin-left: 20px;
+        margin-top: 7px;
+   
     font-size: 12px;
     }
-    .head{
-     height: 60px;
-    }
+   #headlink:hover{
+    height: fit-content;
+    width: fit-content;
+    padding: 1px;
+   }
+    
     .firstInput{
      height: 590px;
      width: 185px;
@@ -318,102 +311,84 @@ h2{
      height: 200px;
      background-color:  #d4af37;
      margin-top: -765px;
-     margin-left: -6.5px;
+     
     }
     .ball{
-     width:80px;
-     height: 80px;
+     width:100px;
+     height: 100px;
      margin-top: -30px;
-     margin-left: -90px;
+     
+     margin-left: 30px;
     }
     .ball:hover{
-     width: 81;
-     height: 81;
+     width: 105;
+     height: 105;
     }
     
     .slideTexts{
-       height: 130px;
-       width: 109px;
+       height: 210px;
+       width: 210px;
        background-color: #d4af37;
-       position: absolute;
-       margin-left: 10px;
+      
+      
        border: none;
        border-radius:10%  ;
        
     }
     .mySlides{
-     height: 100px;
-     margin-top: 15px;
-     margin-left: 1px;
+     height: 200px;
+     margin-top: 5px;
+     margin-left: 5px;
      border: none;
      border-radius: 7px;
      border: none;
      border-radius:10%  ;
     }
     .mySlides:hover{
-     height:140px ;
-     margin-top: -5px;
-     margin-left: -15px;
+     height:210px ;
+    
     }
     
     .slideTexts2{
-     height: 130px;
-     width: 109px;
+     height: 210px;
+     width: 210px;
      background-color: #d4af37;
-     position: absolute;
-     margin-left: 120px;
+     
+    
      border: none;
      border-radius:10%  ;
      }
      .mySlides1{
-     height: 100px;
-     margin-top: 15px;
-     margin-left: 1px;
+     height: 200px;
+     margin-top: 5px;
+     margin-left: 5px;
      border: none;
      border-radius: 7px;
      border: none;
      border-radius:10%  ;
     }
     .mySlides1:hover{
-     height:140px ;
-     margin-top: -5px;
-     margin-left: -15px;
-    }
-    .slideTexts3{
-     height: 130px;
-     width: 109px;
-     background-color: #d4af37;
-     position: absolute;
-     margin-left: 230px;
-     border: none;
-     border-radius:10%  ;
-     }
+     height:210px ;
     
-    
-     .mySlides2{
-     height: 100px;
-     margin-top: 15px;
-     margin-left: 1px;
-     border: none;
-     border-radius: 7px;
-     border: none;
-     border-radius:10%  ;
     }
     
-    .mySlides2:hover{
-     height:140px ;
-     margin-top: -5px;
-     margin-left: -15px;
-    }
+    
+    
+    
     #third{
      background:#FAF8F0;
      border: #d4af37 solid;
-     height: 170px;
+     height: 270px;
      border-radius:10%  ;
      margin-top: 20px;
-     
+     display: flex;
+     justify-content: space-around;
+
      padding-top: 45px;
      opacity: 0.9;
     
     }
+    .brand{
+    font-size: 20px;
+}
     }

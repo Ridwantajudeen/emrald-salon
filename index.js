@@ -45,17 +45,3 @@ function carousel1() {
 }
 let myIndex2 = 0;
 
-carousel2();
-
-function carousel2() {
-  let p;
-  let y = document.getElementsByClassName("mySlides2");
-  for (p = 0; p < y.length; p++) {
-    y[p].style.display = "none";  
-  }
-  myIndex2++;
-  if (myIndex2 > y.length) {myIndex2 = 1}    
-  y[myIndex2-1].style.display = "block";  
-  setTimeout(carousel2, 5000); // Change image every 5 seconds
-
-}

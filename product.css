@@ -21,25 +21,54 @@ body{
 #prod:hover{
  text-decoration: underline;
 }
-.bonnet{
+.bonnet-section{
+    
     display: flex;
-    justify-content: center;
+    
+    
+ overflow: scroll;
+    margin-right: 10px;
+    padding-left: 0px;
+   
+  
 }
 #bonnet{
-    height: 250px;
+    height: 150px;
     border-radius: 10px;
     border:#281c02 solid;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+    
+}
+.bonnet-desc{
+    margin-left: 20px;
+}
+#desc-name{
+    font-size: 15px;
+    width:130px;
    
+    text-align: center;
+}
+#desc-price{
+    font-size: 17px;
+    border: #281c02 solid;
+    width: 120px;
+    text-align: center;
+    margin-top: -10px ;
+    border-radius: 10px;
     
 }
 .quantity{
     display: flex;
-    margin-top: auto;
-    margin-left: 5px;
+    
+    margin-left: 35px;
+    
+    
 }
 #minus{
   
-  height: 30px;
+  height: 25px;
  padding-top: 0;
  
   font-size: 22px;
@@ -50,7 +79,7 @@ body{
 }
 #plus{
   
-  height: 30px;
+  height: 25px;
  padding-top: 0;
  
   font-size: 22px;
@@ -58,6 +87,7 @@ body{
   background-color: black;
   color: white;
   border-radius: 5px;
+  
 
 }
 #num{
@@ -72,6 +102,19 @@ body{
   border-radius: 5px;
  
 
+}
+
+#order-btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    font-size: larger;
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: -10px;
+    border-radius: 10px;
+   
 }
 
 

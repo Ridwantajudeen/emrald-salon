@@ -119,6 +119,7 @@ h2{
 } 
 #book{
     margin-top: 80px;
+    text-decoration: none;
 }
 #book:hover{
     background-color: #d4af37;

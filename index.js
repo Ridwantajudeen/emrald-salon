@@ -1,16 +1,22 @@
-// let myTop = document.getElementById("top")
+let num = document.getElementById("num")
+let plus = document.getElementById("plus")
+let minus = document.getElementById("minus")
+let number = 0
+num.textContent= number
+minus.addEventListener("click", function(){
+  number -= 1
+   num.textContent = number
+})
+plus.addEventListener("click", function(){
+  number += 1
+   num.textContent = number
+})
 
-// window.addEventListener("scroll", () => {
-//     var y = window.scrollY;
-//     if (y >= 100){
-//         myTop.classList.add('disappear');
-//         return;
-//     }
-//     else{
-//         myTop.classList.remove('disappear');
-//         // note that this is a class defined in your CSS.
-//     }
-// });
+
+
+
+
+
 let myIndex = 0;
 
 carousel();

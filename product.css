@@ -1,0 +1,87 @@
+body{
+    background-image: url("image/vvback.jpg");
+    background-size: cover;
+}
+
+.product-type{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#prod{
+    margin-left: 10px;
+    margin-right: 19px;
+    margin-bottom: 60px;
+
+}
+#prod:hover{
+ text-decoration: underline;
+}
+.bonnet{
+    display: flex;
+    justify-content: center;
+}
+#bonnet{
+    height: 250px;
+    border-radius: 10px;
+    border:#281c02 solid;
+   
+    
+}
+.quantity{
+    display: flex;
+    margin-top: auto;
+    margin-left: 5px;
+}
+#minus{
+  
+  height: 30px;
+ padding-top: 0;
+ 
+  font-size: 22px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+#plus{
+  
+  height: 30px;
+ padding-top: 0;
+ 
+  font-size: 22px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+
+}
+#num{
+  
+  height: 30px;
+  width: 40px;
+  padding-right: 0px;
+ margin-top: 0px;
+ text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+  border-radius: 5px;
+ 
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+    .product-type{
+        font-size: 9px;
+        
+        
+    }
+}
